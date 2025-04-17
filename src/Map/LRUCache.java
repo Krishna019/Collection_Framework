@@ -17,7 +17,7 @@ public class LRUCache<K,V> extends LinkedHashMap<K,V> {
 
     public static void main(String[] args) {
         //maan lete hai ki isme 3 entry hai aur jaise 4th entry aaegi toh least recent use  waali entry hat jaayei
-        LRUCache<String,Integer> studentMap = new LRUCache<>(3);
+        LRUCache<Object, Integer> studentMap = new LRUCache<Object, Integer>(3);
         studentMap.put("Bob",99);
         studentMap.put("Alice",89);
         studentMap.put("Ram",91);
